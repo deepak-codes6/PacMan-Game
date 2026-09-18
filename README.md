@@ -42,6 +42,17 @@ in Java — game loops, collision detection, sprite rendering, and keyboard inpu
 - Implementing collision detection between moving and static objects
 - Managing game state (lives, score, power-up timers) cleanly across frames
 - Reading and parsing a tile-based map from a character array
+  ## Instructions for Testing
+
+There is no automated test runner, so the game is verified by running it and working through the scenarios below. Each one maps to a feature listed above.
+
+| # | Test | Steps | Expected result |
+|---|---|---|---|
+| 1 | Launch | Run `java -cp bin App` | Window opens with the maze, Pacman, four ghosts, full food, score 0 and three lives |
+| 2 | Movement | Press each arrow key on an open path | Pacman moves in that direction and the sprite rotates to match |
+| 3 | Wall collision | Drive Pacman straight into a wall | Movement stops flush against the wall — no overlap or tunnelling |
+| 4 | Blocked turn | Press a direction key while facing a wall | The direction change is rejected and the previous direction is kept |
+| 5 | Food collection | Eat a single pellet | The pellet disappears and the score increases exactly once |
 
 
 ## Future Improvements
