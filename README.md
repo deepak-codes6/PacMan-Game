@@ -1,5 +1,6 @@
 **Overview**
 #Pacman Game
+
 A classic Pacman game built in Java using Swing.This project started as a way to understand 2D game development fundamentals 
 in Java — game loops, collision detection, sprite rendering, and keyboard input handling.
 
@@ -46,6 +47,10 @@ in Java — game loops, collision detection, sprite rendering, and keyboard inpu
 
 There is no automated test runner, so the game is verified by running it and working through the scenarios below. Each one maps to a feature listed above.
 
+## Instructions for Testing
+
+There is no automated test runner, so the game is verified by running it and working through the scenarios below. Each one maps to a feature listed above.
+
 | # | Test | Steps | Expected result |
 |---|---|---|---|
 | 1 | Launch | Run `java -cp bin App` | Window opens with the maze, Pacman, four ghosts, full food, score 0 and three lives |
@@ -53,6 +58,17 @@ There is no automated test runner, so the game is verified by running it and wor
 | 3 | Wall collision | Drive Pacman straight into a wall | Movement stops flush against the wall — no overlap or tunnelling |
 | 4 | Blocked turn | Press a direction key while facing a wall | The direction change is rejected and the previous direction is kept |
 | 5 | Food collection | Eat a single pellet | The pellet disappears and the score increases exactly once |
+| 6 | Power food | Eat a power food | All ghosts switch to the scared sprite for the power duration |
+| 7 | Eat a ghost | Touch a ghost while it is scared | Bonus points awarded, no life lost |
+| 8 | Lose a life | Touch a ghost while it is **not** scared | Lives drop by one and all entities reset to their spawn positions |
+| 9 | Game over | Lose all three lives | "Game Over" is displayed with the final score and the loop stops |
+| 10 | Restart | Press any key after game over | Score, lives and map reset, and a new game begins |
+| 11 | Level reset | Clear every pellet on the board | The maze repopulates with food and the score carries over |
+| 12 | High score | Beat your previous best in the same session | The high score field updates immediately and stays for the session |
+| 13 | Ghost behaviour | Watch the ghosts for about a minute | Ghosts change direction on wall contact; none gets permanently stuck |
+| 14 | Stability | Play continuously for several minutes | No exceptions in the console, no frame-rate drop |
+
+If a test fails, check the console output — asset-loading and map-parsing problems surface there first
 
 
 ## Future Improvements
