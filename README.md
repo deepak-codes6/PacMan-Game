@@ -32,7 +32,7 @@ in Java — game loops, collision detection, sprite rendering, and keyboard inpu
 | ← | Move Left |
 | → | Move Right |
 
-##Screenshot
+## Screenshot
 <img width="798" height="907" alt="Screenshot 2026-09-18 225522" src="https://github.com/user-attachments/assets/d59f723d-23af-473e-bcba-b6359ec86e45" />
 
 
