@@ -1,5 +1,5 @@
-#Pacman Game
-**Overview**
+# Pacman Game
+## Overview
 A classic Pacman game built in Java using Swing.This project started as a way to understand 2D game development fundamentals 
 in Java — game loops, collision detection, sprite rendering, and keyboard input handling.
 
