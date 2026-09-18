@@ -17,6 +17,25 @@ in Java — game loops, collision detection, sprite rendering, and keyboard inpu
 - **Language:** Java
 - **Library:** Java Swing (JFrame, JPanel, Graphics) for rendering and windowing
 
+  ## How to Run
+1. Clone or download this repository
+2. Open the project folder in VS Code (with the Java Extension Pack installed)
+3. Make sure all `.png` image assets are present in **both** the `src` and 
+   `bin` folders (required for the game to load sprites correctly)
+4. Open `App.java` and click Run
+
+   ## Controls
+| Key | Action |
+|-----|--------|
+| ↑ | Move Up |
+| ↓ | Move Down |
+| ← | Move Left |
+| → | Move Right |
+
+##Screenshot
+<img width="798" height="907" alt="Screenshot 2026-09-18 225522" src="https://github.com/user-attachments/assets/d59f723d-23af-473e-bcba-b6359ec86e45" />
+
+
 
 ## What I Learned
 - How game loops work using timers and repaint cycles
@@ -30,4 +49,9 @@ in Java — game loops, collision detection, sprite rendering, and keyboard inpu
 - Multiple levels with increasing difficulty
 - Sound effects for eating food, power pellets, and ghost collisions
 - Persistent high score (saved to a file instead of resetting on restart)
+
+  Screenshot
+
+  
+
   
