@@ -28,8 +28,25 @@ demonstrating the practical application of object-oriented programming concepts,
   
   2. **Base Implementation** 
   Understood and set up the core game  architecture — map parsing, sprite loading, movement logic, and collision detection.
+
+## Target Users
+
+- **Casual players** who want a quick, familiar arcade game that runs locally with no installation beyond a Java runtime.
+- **Students learning Java** who want a readable, dependency-free reference for how a game loop, collision detection and Swing rendering fit together in a real program.
+- **Evaluators and reviewers** assessing the practical application of object-oriented design, event-driven programming and real-time rendering in core Java.
+- **Anyone extending the project** — the tile map is plain text and the entity model is a single reusable class, so new mazes, ghosts or collectibles can be added without touching the rendering logic.
   
 
+## High-Level Features
+
+| # | Feature | Description |
+|---|---|---|
+| 1 | Tile-based maze | The map is stored as a character grid and parsed once at start-up into walls, food, power food, ghosts and Pacman. |
+| 2 | Player movement | Arrow-key control with the sprite rotating to face the direction of travel; turns into walls are rejected rather than clipped. |
+| 3 | Wall collision | Axis-aligned bounding-box detection; a blocked move is reverted so entities rest flush against walls. |
+| 4 | Ghost movement | Four ghosts move autonomously and pick a new random direction whenever a move is blocked. |
+| 5 | Food and scoring | Pellets are removed on contact and the score increases; the live score is drawn on screen. |
+   
    ## Expected Outcome
 A playable, bug-free Pacman game that demonstrates:
 - Correct application of object-oriented design (Block, PacMan classes)
